@@ -4,4 +4,5 @@ Applet that drops rectangles and tessellated circles.  Buttons allow changing th
 
 To run:
 javac ShapeApp.java
+
 java ShapeApp
