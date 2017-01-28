@@ -1,0 +1,37 @@
+<html>
+<head>
+	<style>
+	h1 {font-family: sans-serif; font-size: 48pt}
+	body {font-family: sans-serif;}
+	</style>
+
+	<h1>Design</h1>
+
+</head>
+
+<body>
+	The way this program is structured is that the "HW01" class handles the main
+	instance, delegating the bulk of the work to the "Grid" class. <br>
+	This was done in order to separate the window from the grid/JPanel, as well
+	as keep the code modularized for extensibility. <br><br>
+
+	The "Grid" class handled creating objects from the "MyPolygon" class, all
+	of the drawing and refreshing the window, as well as receiving inputs from
+	the Panel classes.<br>
+	It acted as the key player in the program, tying all classes together.<br><br>
+
+	Next, "MyPolygon" was created as an abstract class to allow a single type of
+	object to be used interchangeably between "MyRectangle" and "TessCircle".
+
+	This allowed the efficient use of a single array, instead of two separate ones.
+	This one array with the type "MyPolygon" could then represent either of the
+	subclasses' shapes.<br><br>
+
+	The button panels were separated into more important (MainPanel: initialization/closing)
+	and less important (SizePanel: changing size/properties) actions of the objects to
+	improve the user experience.<br><br>
+
+	In addition, this program allows pausing of the gravity simulation as well as
+	coloring the objects green as they reach the bottom.
+</body>
+</html>
